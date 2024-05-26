@@ -13,7 +13,7 @@ Sample
 
 Link to [TBTextField](/documentation/TBTextField).
 
-Link to [Blog]({% post_url 2024-05-24-test %})
+Link to [Blog]({% post_url 2024-05-26-loadjsonfromfile %})
 
 Link to Image ![alt](/assets/26824679_m.jpg)
 
