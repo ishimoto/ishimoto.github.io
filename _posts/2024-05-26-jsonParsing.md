@@ -61,9 +61,15 @@ Object o;
 o = node.valueForKeyPath("id"));
 o = node.valueForKeyPath("resourceType"));
 o = node.valueForKeyPath("providedBy.reference");
+
 o = node.valueForKeyPath("meta.extension[0].url");
 o = node.valueForKeyPath("availableTime[0].extension[0].url"));
-o = node.valueForKeyPath("availableTime[0].daysOfWeek[?]"));
 o = node.valueForKeyPath("identifier[1].type.coding[0].code"));
+
+o = node.valueForKeyPath("availableTime[0].daysOfWeek[?]"));
+
+o = node.valueForKeyPath("identifier[n].value");
+o = node.valueForKeyPath("availableTime[0].daysOfWeek[n]");
+
 {% endhighlight %}
 
