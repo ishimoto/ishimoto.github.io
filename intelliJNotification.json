@@ -1,0 +1,21 @@
+{
+  "messages": [
+    {
+      // unique → dedup (store seen ids)
+      "id": "2026-06-mdc-video",
+      // info | warning
+      "type": "info",
+
+      "title": "New video: Sangria 001",
+      "body": "A old sample Video for testing.",
+
+      "actionLabel": "Watch",
+      // (optional)
+      "actionUrl": "https://www.youtube.com/watch?v=pTE_SlqrXCg",
+
+      // optional targeting
+      "minPluginVersion": "1.1",
+      "publishedAt": "2026-06-14"
+    }
+  ]
+}
