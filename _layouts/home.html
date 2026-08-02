@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<div class="pagehead">
+  <div class="wrap">
+    <div class="eyebrow">Blog</div>
+    <h1>{{ site.title }}</h1>
+    <p>Notes, how-tos and updates on TreasureBoat — the modern Java web framework.</p>
+  </div>
+</div>
+<main>
+  <div class="wrap">
+    {{ content }}
+    <ul class="posts">
+      {% for post in site.posts %}
+      <li class="postcard">
+        <a href="{{ post.url | relative_url }}">
+          <span class="date">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <h2>{{ post.title }}</h2>
+          <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</main>

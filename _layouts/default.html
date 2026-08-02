@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description | strip_newlines | truncate: 160 }}">
+  <link rel="icon" type="image/png" href="{{ '/assets/tb-128.png' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/tb.css' | relative_url }}">
+  {%- feed_meta -%}
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <img class="mark" src="{{ '/assets/tb-128.png' | relative_url }}" alt="TreasureBoat">
+      TreasureBoat <span class="dim">Blog</span>
+    </a>
+    <div class="navlinks">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="https://treasureboat.org">treasureboat.org</a>
+      <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+    </div>
+  </div>
+</nav>
+
+{{ content }}
+
+<footer>
+  <div class="wrap">
+    <div>© {{ 'now' | date: "%Y" }} TreasureBoat · <a href="https://treasureboat.org">treasureboat.org</a></div>
+    <div class="flinks">
+      <a href="https://treasureboat.org">Home</a>
+      <a href="https://github.com/{{ site.github_username }}">GitHub</a>
+      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
