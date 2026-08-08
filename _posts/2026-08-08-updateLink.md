@@ -9,7 +9,8 @@ tags: ajax
 ---
 # Non Session Ajax update
 
-From the ControlCenter you can get access via **Policy.tb-core-extensions.show.dashboard.DashboardAjaxUI**.
+From the ControlCenter you can get access via  
+**Policy.tb-core-extensions.show.dashboard.DashboardAjaxUI**.  
 This is a new set of commands for having Ajax UpdateContainers in Non Session calls.
 
 ## Sample 1
@@ -108,4 +109,4 @@ Network Error Processing
 
 ## IntelliJ Code Editor
 
-![CodeEditorSample](CodeEditor/CodeEditorSample.png)
+![CodeEditorSample](/assets/CodeEditor/CodeEditorSample.png)
