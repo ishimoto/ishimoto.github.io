@@ -105,3 +105,7 @@ Network Error Processing
     Trigger a failing call
 </tb:updateLink>
 {% endhighlight %}
+
+## IntelliJ Code Editor
+
+![CodeEditorSample](CodeEditor/CodeEditorSample.png)
