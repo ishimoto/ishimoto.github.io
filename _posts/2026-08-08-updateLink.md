@@ -13,7 +13,10 @@ From the ControlCenter you can get access via
 **Policy.tb-core-extensions.show.dashboard.DashboardAjaxUI**.  
 This is a new set of commands for having Ajax UpdateContainers in Non Session calls.
 
+![CodeEditorSample](/assets/QuickLauncher/AjaxTest.png)
+
 ## Sample 1
+
 a simple ajax call from a non session page to an direct action.
 
 {% highlight html %}
@@ -35,6 +38,8 @@ a simple ajax call from a non session page to an direct action.
         return dataResponseWithExpiredDate(html);
     }
 {% endhighlight %}
+
+---
 
 ## Sample 2
 
