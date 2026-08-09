@@ -34,6 +34,10 @@ theme: minima
 plugins:
   - jekyll-feed
 
+# Publishing settings
+timezone: Asia/Tokyo   # judge post "future" dates in JST, not the build server's UTC
+future: true           # publish posts even if their date is slightly ahead of build time
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
