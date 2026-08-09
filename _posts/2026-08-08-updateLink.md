@@ -107,6 +107,9 @@ Network Error Processing
 </tb:updateLink>
 {% endhighlight %}
 
-## IntelliJ Code Editor
+# IntelliJ Code Editor
+
+Here a sample Screenshot of IntelliJ Code Editor. You can see this Class has an .api file.  
+Clicking on the API icon will open the API Editor.
 
 ![CodeEditorSample](/assets/CodeEditor/CodeEditorSample.png)
