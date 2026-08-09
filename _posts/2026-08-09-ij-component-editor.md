@@ -3,7 +3,7 @@ published: true
 layout: post
 title:  "IntelliJ IDEA Component Editor"
 author: ishimoto
-date:   2026-08-09 12:20:00 +0900
+date:   2026-08-09
 categories: IntelliJ
 tags: IntelliJ
 ---
