@@ -55,6 +55,8 @@ a simple ajax call from a non session page to an direct action from a Selector T
         updateContainer="tbSelectStatus" />
 {% endhighlight %}
 
+---
+
 ## Sample 3
 
 an updateLink with a confirm message.
@@ -70,6 +72,8 @@ an updateLink with a confirm message.
     </tb:updateLink>
 </tb:form>
 {% endhighlight %}
+
+---
 
 ## Sample 4
 
@@ -99,6 +103,8 @@ public ITBWActionResults echo() {
     return dataResponseWithExpiredDate(html);
 }
 {% endhighlight %}
+
+---
 
 ## Sample 5
 
