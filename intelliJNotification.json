@@ -1,21 +1,13 @@
 {
   "messages": [
     {
-      // unique → dedup (store seen ids)
-      "id": "2026-06-mdc-video",
-      // info | warning
+      "id": "2026-08-welcome",
       "type": "info",
-
-      "title": "New video: Sangria 001",
-      "body": "A old sample Video for testing.",
-
-      "actionLabel": "Watch",
-      // (optional)
-      "actionUrl": "https://www.youtube.com/watch?v=pTE_SlqrXCg",
-
-      // optional targeting
+      "title": "Welcome to IntelliJ",
+      "body": "Thank you for using TreasureBoat Coding Tools with IntelliJ.",
+      "actionLabel": "Thanks",
       "minPluginVersion": "1.1",
-      "publishedAt": "2026-06-14"
+      "publishedAt": "2026-08-15"
     }
   ]
 }
