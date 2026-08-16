@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title:  "IntelliJ IDEA のプロジェクト構成"
 author: ishimoto
