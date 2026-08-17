@@ -101,9 +101,15 @@ and so on.
 | **parentName** | Parent entity, for inheritance |
 | **isAbstractEntity** | Abstract entity — no table of its own |
 
+#### Basic Panel
+
 ![Basic](/assets/EntityEditor/EntBasic.png)
 
+#### Advanced Panel
+
 ![Advanced](/assets/EntityEditor/EntAdvanced.png)
+
+#### Localization Panel
 
 ![Localization](/assets/EntityEditor/EntLocalization.png)
 
@@ -131,9 +137,15 @@ and so on.
 > primary or foreign key you must set **`columnName = id`** explicitly — otherwise
 > the generated SQL fails with *"column uuid does not exist"*.
 
+#### Basic Panel
+
 ![Basic](/assets/EntityEditor/AttBasic.png)  
 
+#### Advanced Panel
+
 ![Advanced](/assets/EntityEditor/AttAdvanced.png)  
+
+#### Documentation Panel
 
 ![Documentation](/assets/EntityEditor/AttDocumentation.png)  
 
@@ -145,6 +157,10 @@ and so on.
 | **destination** | The target entity |
 | **isToMany** | To-one (a single object) or to-many (an array) |
 | **deleteRule** | What happens to the other side on delete: `Nullify`, `Cascade`, `Deny`, `No Action` |
+
+#### Basic Panel
+
+#### Advanced Panel
 
 ![Basic](/assets/EntityEditor/RelBasic.png)
 
