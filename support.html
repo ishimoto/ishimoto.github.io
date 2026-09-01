@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TreasureBoat — Support</title>
+<meta name="description" content="Support for the TreasureBoat framework, the TreasureBoat IntelliJ plugin, and the TBConnect app.">
+<style>
+  :root{--navy:#0a1830;--navy2:#0b1e3a;--ink:#0f172a;--slate:#475569;--mute:#64748b;--teal:#2dd4bf;--cyan:#22d3ee;--gold:#f5c451;--line:#e2e8f0;--bg:#f8fafc;
+    --font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased}
+  a{color:#0e93a6;font-weight:600;text-decoration:none}a:hover{text-decoration:underline}
+  .head{background:radial-gradient(1000px 500px at 80% -20%,rgba(34,211,238,.16),transparent 60%),linear-gradient(180deg,var(--navy),var(--navy2));color:#e5edf7}
+  .wrap{max-width:800px;margin:0 auto;padding:0 24px}
+  .head .wrap{padding:56px 24px 44px}
+  .eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}
+  .head h1{font-size:2.1rem;letter-spacing:-.02em;color:#fff;margin:.4rem 0}
+  .head p{color:#aebfd4}
+  main{padding:56px 0 80px}
+  h2{font-size:1.25rem;letter-spacing:-.01em;margin:2rem 0 .5rem;color:var(--ink)}
+  h3{font-size:1rem;margin:1.2rem 0 .2rem;color:var(--ink)}
+  p{color:var(--slate);margin:.6rem 0}
+  ul{margin:.5rem 0 .8rem 1.3rem;color:var(--slate)}li{margin:.3rem 0}
+  code{background:#eef2f7;border:1px solid var(--line);border-radius:6px;padding:.08rem .35rem;font-size:.9em}
+  .meta{color:var(--mute);font-size:.9rem}
+  .note{background:linear-gradient(135deg,rgba(45,212,191,.1),rgba(245,196,81,.1));border:1px solid var(--line);border-radius:14px;padding:16px 18px;color:var(--slate);font-size:.94rem;margin:22px 0}
+  footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mute);font-size:.88rem}
+</style>
+</head>
+<body>
+
+<div class="head">
+  <div class="wrap">
+    <div class="eyebrow">Support</div>
+    <h1>TreasureBoat — Support</h1>
+    <p class="meta">Help for the TreasureBoat framework, the TreasureBoat IntelliJ plugin, and the TBConnect app.</p>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+
+    <div class="note">Need a person? Write to <a href="mailto:office@treasureboat.org">office@treasureboat.org</a>. Tell us which tool, what you expected, and what happened instead — that is usually enough to work it out.</div>
+
+    <h2>TBConnect</h2>
+    <p>TBConnect is a menubar app for macOS. It asks your TreasureBoat server which project URLs are shared with you, lists them in the menubar, and opens the one you click in your browser. It needs macOS 26 or newer.</p>
+
+    <h3>It lives in the menubar, not the Dock</h3>
+    <p>There is no Dock icon and no window until you open one, which is deliberate for something you use a dozen times a day. That also means <b>⌘Q from another app will not quit it</b> — click the menubar icon and choose <b>Quit TBConnect</b>.</p>
+
+    <h3>The menu says “No shared projects”</h3>
+    <p>The call worked; there is simply nothing shared with you yet. Project links are shared by whoever administers your TreasureBoat server, either with everyone or with you individually. Ask them to add you.</p>
+
+    <h3>It says no TreasureBoat ID is set</h3>
+    <p>Open <b>Settings…</b> from the menu and either enter your TreasureBoat ID, or pair this Mac (below). If you do not have an ID yet, request one at <a href="https://treasureboat.org">treasureboat.org</a>.</p>
+
+    <h3>Pairing this Mac</h3>
+    <p>Pairing is the better way to identify a Mac, because the credential lives in the Keychain instead of being typed. In <b>Settings…</b> choose <b>Pair this Mac</b>. A QR code appears; scan it with the <b>Approve App</b> screen in the TreasureBoat app on your phone. Once approved, the Mac identifies itself with that pairing and the typed ID is no longer used.</p>
+    <p><b>Unpair</b> removes the credential from this Mac and forgets the cached list. You can also remove the device from your phone, which revokes it everywhere.</p>
+
+    <h3>The list is there but marked as cached</h3>
+    <p>TBConnect keeps the last list it received so the links are available when you are offline. If a refresh fails, the previous list stays on screen and is marked as cached rather than being emptied — a list from an hour ago is more useful than none. It refreshes when you open the menu, and hourly on its own.</p>
+
+    <h2>The IntelliJ plugin</h2>
+    <p><b>TreasureBoat Coding Tools</b> is free on the <a href="https://plugins.jetbrains.com/plugin/33292-treasureboat-coding-tools">JetBrains Marketplace</a>. Install it from <code>Settings → Plugins → Marketplace</code> and restart the IDE.</p>
+    <p>To activate it, put your TreasureBoat ID into <code>Settings → Tools → TreasureBoat → License</code> and click <b>Receive License</b>. The licence is fetched and installed for you. If retrieval fails, check that the ID is correct and that the machine can reach <a href="https://treasureboat.org">treasureboat.org</a>; the server and shared-secret fields can be left empty, and default to production.</p>
+
+    <h2>Licences and TreasureBoat IDs</h2>
+    <p>A free TreasureBoat ID starts a 90-day trial of the full environment. After that you continue with a Basic, Pro or Ultra licence. Questions about editions, renewals or invoices go to <a href="mailto:office@treasureboat.org">office@treasureboat.org</a>.</p>
+
+    <h2>Reporting a problem</h2>
+    <p>What helps most:</p>
+    <ul>
+      <li>Which tool and which version — TBConnect shows its version at the top of <b>Settings…</b>, and the plugin shows its own under <b>About</b>.</li>
+      <li>What you did, what you expected, and what happened.</li>
+      <li>The exact wording of any message, including anything after a code number.</li>
+      <li>Your macOS or IDE version, if it seems relevant.</li>
+    </ul>
+
+    <h2>See also</h2>
+    <p><a href="https://blog.treasureboat.org/license.html">License &amp; Terms</a> · <a href="https://blog.treasureboat.org/privacy-policy.html">Privacy Policy</a> · <a href="https://treasureboat.org">treasureboat.org</a></p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 TreasureBoat · <a href="https://treasureboat.org">treasureboat.org</a></div>
+</footer>
+</body>
+</html>
