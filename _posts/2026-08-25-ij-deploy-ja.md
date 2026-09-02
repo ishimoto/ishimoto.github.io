@@ -36,6 +36,7 @@ deploy.target.live.servers=app01\:app, apache\:wsr
 * **Servers（サーバー）** — 各デプロイ先サーバーの定義です。`host`、SSH の `user`、インストール先の `base`、そしてどの **build**（ビルド）タイプを使うかを指定します。
 * **Targets（ターゲット）** — サーバーを **ロール** に対応づける名前付きプロファイルです（ここでは `live`）。`app01:app` はアプリケーションを実行し、`apache:wsr` は静的な Web リソースを配信します。`live` ターゲットをデプロイすると、各サーバーに担当分が SSH 経由で送られます。
 
+
 ![DeployEditor](/assets/Deploy/DeployEditor.png) 
 
 ---
