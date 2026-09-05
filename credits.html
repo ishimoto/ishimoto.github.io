@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TreasureBoat — Credits</title>
+<meta name="description" content="Open-source components used in the TreasureBoat apps, and their licences.">
+<style>
+  :root{--navy:#0a1830;--navy2:#0b1e3a;--ink:#0f172a;--slate:#475569;--mute:#64748b;--teal:#2dd4bf;--cyan:#22d3ee;--gold:#f5c451;--line:#e2e8f0;--bg:#f8fafc;
+    --font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased}
+  a{color:#0e93a6;font-weight:600;text-decoration:none}a:hover{text-decoration:underline}
+  .head{background:radial-gradient(1000px 500px at 80% -20%,rgba(34,211,238,.16),transparent 60%),linear-gradient(180deg,var(--navy),var(--navy2));color:#e5edf7}
+  .wrap{max-width:800px;margin:0 auto;padding:0 24px}
+  .head .wrap{padding:56px 24px 44px}
+  .eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}
+  .head h1{font-size:2.1rem;letter-spacing:-.02em;color:#fff;margin:.4rem 0}
+  .head p{color:#aebfd4}
+  main{padding:56px 0 80px}
+  h2{font-size:1.25rem;letter-spacing:-.01em;margin:2rem 0 .5rem;color:var(--ink)}
+  h3{font-size:1rem;margin:1.2rem 0 .2rem;color:var(--ink)}
+  p{color:var(--slate);margin:.6rem 0}
+  ul{margin:.5rem 0 .8rem 1.3rem;color:var(--slate)}li{margin:.3rem 0}
+  code{background:#eef2f7;border:1px solid var(--line);border-radius:6px;padding:.08rem .35rem;font-size:.9em}
+  .meta{color:var(--mute);font-size:.9rem}
+  .note{background:linear-gradient(135deg,rgba(45,212,191,.1),rgba(245,196,81,.1));border:1px solid var(--line);border-radius:14px;padding:16px 18px;color:var(--slate);font-size:.94rem;margin:22px 0}
+  footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mute);font-size:.88rem}
+  pre{background:#0f172a;color:#e5edf7;border-radius:12px;padding:16px 18px;overflow-x:auto;font-size:.82rem;line-height:1.5;margin:.8rem 0}
+</style>
+</head>
+<body>
+
+<div class="head">
+  <div class="wrap">
+    <div class="eyebrow">Credits</div>
+    <h1>Open-source components</h1>
+    <p class="meta">What the TreasureBoat apps include, and the notices those licences ask for.</p>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+
+    <div class="note">Listed per app, because they do not all include the same things. Where a licence requires its notice to be reproduced, it is reproduced here in full rather than linked.</div>
+
+    <h2>Which apps include what</h2>
+    <table>
+      <tr><th>App</th><th>Components</th></tr>
+      <tr><td>MTBMobile (iOS)</td><td>swift-markdown, swift-cmark</td></tr>
+      <tr><td>MTBDesktop (macOS)</td><td>none</td></tr>
+      <tr><td>MTBVision (visionOS)</td><td>none</td></tr>
+      <tr><td>TBConnect (macOS)</td><td>none</td></tr>
+    </table>
+    <p>The two components below come with the Markdown renderer, which only MTBMobile currently ships. The other apps contain no third-party code.</p>
+
+    <h2>swift-markdown</h2>
+    <p><a href="https://github.com/swiftlang/swift-markdown">github.com/swiftlang/swift-markdown</a> — a Swift package for parsing, building and rendering Markdown, from the Swift project. Used to render documentation inside the app.</p>
+    <p>Licensed under the <b>Apache License, Version 2.0</b>. The full text is available at <a href="https://www.apache.org/licenses/LICENSE-2.0">apache.org/licenses/LICENSE-2.0</a>.</p>
+
+    <h2>swift-cmark</h2>
+    <p><a href="https://github.com/swiftlang/swift-cmark">github.com/swiftlang/swift-cmark</a> — the CommonMark parser underneath swift-markdown, derived from <a href="https://github.com/commonmark/cmark">cmark</a> and <a href="https://github.com/github/cmark-gfm">cmark-gfm</a>.</p>
+    <p>Licensed under the <b>BSD 2-Clause license</b>, which asks that its notice be reproduced with any binary distribution. Upstream ships one <code>COPYING</code> covering several components, reproduced here in full:</p>
+    <pre>Copyright (c) 2014, John MacFarlane
+
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+
+    * Redistributions in binary form must reproduce the above
+      copyright notice, this list of conditions and the following
+      disclaimer in the documentation and/or other materials provided
+      with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+&quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+-----
+
+houdini.h, houdini_href_e.c, houdini_html_e.c, houdini_html_u.c
+
+derive from https://github.com/vmg/houdini (with some modifications)
+
+Copyright (C) 2012 Vicent Martí
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the &quot;Software&quot;), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-----
+
+buffer.h, buffer.c, chunk.h
+
+are derived from code (C) 2012 Github, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the &quot;Software&quot;), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+-----
+
+utf8.c and utf8.c
+
+are derived from utf8proc
+(&lt;http://www.public-software-group.org/utf8proc&gt;),
+(C) 2009 Public Software Group e. V., Berlin, Germany.
+
+Permission is hereby granted, free of charge, to any person obtaining a
+copy of this software and associated documentation files (the &quot;Software&quot;),
+to deal in the Software without restriction, including without limitation
+the rights to use, copy, modify, merge, publish, distribute, sublicense,
+and/or sell copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+DEALINGS IN THE SOFTWARE.
+
+-----
+
+The normalization code in normalize.py was derived from the
+markdowntest project, Copyright 2013 Karl Dubost:
+
+The MIT License (MIT)
+
+Copyright (c) 2013 Karl Dubost
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+&quot;Software&quot;), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+-----
+
+The CommonMark spec (test/spec.txt) is
+
+Copyright (C) 2014-15 John MacFarlane
+
+Released under the Creative Commons CC-BY-SA 4.0 license:
+&lt;http://creativecommons.org/licenses/by-sa/4.0/&gt;.
+
+-----
+
+The test software in test/ is
+
+Copyright (c) 2014, John MacFarlane
+
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+
+    * Redistributions in binary form must reproduce the above
+      copyright notice, this list of conditions and the following
+      disclaimer in the documentation and/or other materials provided
+      with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+&quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</pre>
+    <p>That file bundles more than one licence — the BSD notice above, several MIT-style notices for the GitHub Flavored Markdown extensions, and the test-suite material — so it is reproduced whole rather than quoted in part.</p>
+
+    <h2>Everything else</h2>
+    <p>The rest of the TreasureBoat apps — the framework client, the wire protocol, pairing, the video channel screens — is our own work. Where it uses something, it is listed above.</p>
+
+    <h2>See also</h2>
+    <p><a href="https://blog.treasureboat.org/license.html">License &amp; Terms</a> · <a href="https://blog.treasureboat.org/privacy-policy.html">Privacy Policy</a> · <a href="https://blog.treasureboat.org/support.html">Support</a></p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 TreasureBoat · <a href="https://treasureboat.org">treasureboat.org</a></div>
+</footer>
+</body>
+</html>
