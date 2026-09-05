@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MTBVision — Help</title>
+<meta name="description" content="Help for MTBVision, the TreasureBoat video channel app for Apple Vision Pro.">
+<style>
+  :root{--navy:#0a1830;--navy2:#0b1e3a;--ink:#0f172a;--slate:#475569;--mute:#64748b;--teal:#2dd4bf;--cyan:#22d3ee;--gold:#f5c451;--line:#e2e8f0;--bg:#f8fafc;
+    --font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased}
+  a{color:#0e93a6;font-weight:600;text-decoration:none}a:hover{text-decoration:underline}
+  .head{background:radial-gradient(1000px 500px at 80% -20%,rgba(34,211,238,.16),transparent 60%),linear-gradient(180deg,var(--navy),var(--navy2));color:#e5edf7}
+  .wrap{max-width:800px;margin:0 auto;padding:0 24px}
+  .head .wrap{padding:56px 24px 44px}
+  .eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}
+  .head h1{font-size:2.1rem;letter-spacing:-.02em;color:#fff;margin:.4rem 0}
+  .head p{color:#aebfd4}
+  main{padding:56px 0 80px}
+  h2{font-size:1.25rem;letter-spacing:-.01em;margin:2rem 0 .5rem;color:var(--ink)}
+  h3{font-size:1rem;margin:1.2rem 0 .2rem;color:var(--ink)}
+  p{color:var(--slate);margin:.6rem 0}
+  ul{margin:.5rem 0 .8rem 1.3rem;color:var(--slate)}li{margin:.3rem 0}
+  code{background:#eef2f7;border:1px solid var(--line);border-radius:6px;padding:.08rem .35rem;font-size:.9em}
+  .meta{color:var(--mute);font-size:.9rem}
+  .note{background:linear-gradient(135deg,rgba(45,212,191,.1),rgba(245,196,81,.1));border:1px solid var(--line);border-radius:14px;padding:16px 18px;color:var(--slate);font-size:.94rem;margin:22px 0}
+  footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mute);font-size:.88rem}
+</style>
+</head>
+<body>
+
+<div class="head">
+  <div class="wrap">
+    <div class="eyebrow">Help</div>
+    <h1>MTBVision</h1>
+    <p class="meta">TreasureBoat video channels on Apple Vision Pro.</p>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+
+    <div class="note">This covers what the app does today. It will grow as features land — if something here is missing or wrong, write to <a href="mailto:office@treasureboat.org">office@treasureboat.org</a>.</div>
+
+    <h2>What it is</h2>
+    <p>MTBVision shows the video channels on your TreasureBoat server: channels on the left, the videos of the selected channel on the right, and each video in a window you can place wherever you like. It needs visionOS 26 or newer.</p>
+
+    <h3>Where the controls are</h3>
+    <p>Below the window there is a small bar — an <b>ornament</b> — holding <b>Refresh</b>, <b>Monitors</b>, <b>Help</b> and <b>Settings</b>. That is where this app keeps everything a Mac would put in a menu bar, because visionOS has no menu bar.</p>
+
+    <h2>Getting started</h2>
+    <p>You can use it without setting anything up. With no identity configured the app shows the channels shared with everyone, so it is useful immediately.</p>
+
+    <h3>Seeing the channels shared with you</h3>
+    <p>Channels can be shared with everybody, or with particular people. To see the ones shared with you, the app has to know who you are — either by pairing, or by a TreasureBoat ID typed into Settings. Pairing is preferred, because the credential is stored rather than typed.</p>
+
+    <h3>Pairing: type the code, do not try to scan it</h3>
+    <p>This is the one thing that works differently here than on a Mac or a TV.</p>
+    <p>In <b>Settings → Pair this device</b> a QR code appears together with a short code such as <code>2YAK-V4C4</code>. On any other device you would scan the QR with your phone. <b>You cannot do that here</b> — the QR is being displayed inside the headset you are wearing, where no phone camera can ever see it.</p>
+    <p>So read the code instead. Open the TreasureBoat app on your phone, go to <b>Approve an App</b>, and type the code into the field below the Scan button. The letters are chosen so they cannot be misread: there is no <b>I</b>, no <b>O</b>, no <b>0</b> and no <b>1</b> in a pairing code. Include the hyphen, or type it without — the field puts it back either way.</p>
+    <p>The code is good for a few minutes. If it expires, start a new pairing; nothing is lost by doing so.</p>
+    <p><b>Unpair this device</b> removes the credential and returns to the shared view.</p>
+
+    <h2>Watching</h2>
+    <p>Select a channel, then look at a video and pinch. A window opens showing the poster, the description and a <b>Play</b> button. Nothing is downloaded until you press Play, so opening a video by mistake costs nothing.</p>
+    <p>Each video opens in its own window, so you can place one where you want it and carry on browsing the list — or leave one playing while you look at something else.</p>
+
+    <h3>Likes</h3>
+    <p>The heart beside a video shows how many people liked it, and is filled when you are one of them. <b>A like cannot be taken back</b> — the server refuses a second one, so the heart becomes an indicator once given.</p>
+    <p>Liking needs your own identity. While the app is showing the shared view the count is visible but there is nothing to press: everyone reading publicly resolves to the same identity, so one anonymous like would be everybody's.</p>
+
+    <h2>Monitors</h2>
+    <p>The <b>Monitors</b> button in the ornament lists the TreasureBoat Monitors you have configured and opens the chosen one in its own window. Add and remove them under <b>Settings → Monitors</b>.</p>
+
+    <h3>Access ID</h3>
+    <p>When this device is paired, Settings shows an <b>Access ID</b> with a <b>Copy</b> button beside it. It identifies you to a Monitor without revealing your TreasureBoat ID, and a server administrator can allow it so that this device is accepted wherever it is — rather than allowing an IP address that has to be edited when you travel.</p>
+    <p>Each Monitor has its own <b>Send my access token to this server</b> setting, ticked automatically for the port Monitors normally use. Anything else you add is not sent a token unless you say so.</p>
+
+    <h2>If something is not working</h2>
+
+    <h3>The phone says no pairing request was found</h3>
+    <p>Either the code has expired — they are short-lived — or a character was mistyped. Start a new pairing on the headset and read the new code carefully; remember that <b>I</b>, <b>O</b>, <b>0</b> and <b>1</b> never appear in one, so a character that looks like any of them is something else.</p>
+
+    <h3>No channels appear</h3>
+    <p>Check the server in Settings. If a message mentions a method that does not exist, the app is talking to a server that has not been updated yet.</p>
+
+    <h3>A channel picture is missing</h3>
+    <p>The picture is named by the server. If the name refers to something this app does not carry and is not a web address, a placeholder is shown rather than an error — the channel itself still works.</p>
+
+    <h2>See also</h2>
+    <p><a href="https://blog.treasureboat.org/mtbdesktop-help.html">MTBDesktop Help</a> · <a href="https://blog.treasureboat.org/support.html">Support</a> · <a href="https://blog.treasureboat.org/license.html">License &amp; Terms</a> · <a href="https://blog.treasureboat.org/privacy-policy.html">Privacy Policy</a></p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 TreasureBoat · <a href="https://treasureboat.org">treasureboat.org</a></div>
+</footer>
+</body>
+</html>
