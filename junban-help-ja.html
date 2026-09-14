@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>順番 — ヘルプ</title>
+<meta name="description" content="バドミントン・ピックルボールの練習ローテーションアプリ「順番」のヘルプ。">
+<style>
+  :root{--navy:#0a1830;--navy2:#0b1e3a;--ink:#0f172a;--slate:#475569;--mute:#64748b;--teal:#2dd4bf;--cyan:#22d3ee;--gold:#f5c451;--line:#e2e8f0;--bg:#f8fafc;
+    --font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased}
+  a{color:#0e93a6;font-weight:600;text-decoration:none}a:hover{text-decoration:underline}
+  .head{background:radial-gradient(1000px 500px at 80% -20%,rgba(34,211,238,.16),transparent 60%),linear-gradient(180deg,var(--navy),var(--navy2));color:#e5edf7}
+  .wrap{max-width:800px;margin:0 auto;padding:0 24px}
+  .head .wrap{padding:56px 24px 44px}
+  .eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}
+  .head h1{font-size:2.1rem;letter-spacing:-.02em;color:#fff;margin:.4rem 0}
+  .head p{color:#aebfd4}
+  main{padding:56px 0 80px}
+  h2{font-size:1.25rem;letter-spacing:-.01em;margin:2rem 0 .5rem;color:var(--ink)}
+  h3{font-size:1rem;margin:1.2rem 0 .2rem;color:var(--ink)}
+  p{color:var(--slate);margin:.6rem 0}
+  ul{margin:.5rem 0 .8rem 1.3rem;color:var(--slate)}li{margin:.3rem 0}
+  code{background:#eef2f7;border:1px solid var(--line);border-radius:6px;padding:.08rem .35rem;font-size:.9em}
+  .meta{color:var(--mute);font-size:.9rem}
+  .note{background:linear-gradient(135deg,rgba(45,212,191,.1),rgba(245,196,81,.1));border:1px solid var(--line);border-radius:14px;padding:16px 18px;color:var(--slate);font-size:.94rem;margin:22px 0}
+  footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mute);font-size:.88rem}
+</style>
+<style>
+  .lang{margin:0 0 4px;font-size:.85rem}
+  .lang a{color:#8fd8e6}
+  body:lang(ja){line-height:1.9;font-family:-apple-system,BlinkMacSystemFont,'Hiragino Sans','Noto Sans JP','Yu Gothic',sans-serif}
+</style>
+</head>
+<body lang="ja">
+
+<div class="head">
+  <div class="wrap">
+    <div class="eyebrow">ヘルプ</div>
+    <h1>順番 Junban</h1>
+    <p class="meta">誰と誰が組むのか、次に休むのは誰か。</p>
+    <p class="lang"><a href="https://blog.treasureboat.org/junban-help.html">English</a></p>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+
+    <div class="note">このページに足りないことや間違いがあれば <a href="mailto:office@treasureboat.org">office@treasureboat.org</a> までご連絡ください。どうなると思っていたか、実際にはどうなったかを書いていただけると、たいていそれで分かります。</div>
+
+    <h2>どんなアプリか</h2>
+    <p>いつも幹事が紙とペンでやっている仕事を、順番が引き受けます。来た人をコート数に合わせて振り分け、毎ラウンド組み合わせを変え、特定の人だけが何度も休むことがないようにします。試合時間も計り、終わればアラームが鳴ります。iOS 18.2 以降が必要で、iPhone と iPad の両方で使えます。</p>
+
+    <h2>はじめに</h2>
+    <p>まず <b>メンバー</b> から <b>+</b> で人を登録します。必要なのはニックネームだけです。写真を選ぶと丸く切り抜かれ、休憩リストと成績に表示されます。</p>
+    <p>次に <b>練習を始める</b>。聞かれるのは3つ、シングルスかダブルスか、コートは何面か、1試合は何分か。参加者にチェックを入れて開始します。</p>
+
+    <h3>グループ</h3>
+    <p>バドミントンの日とピックルボールの日のように、参加者が違う場合は <b>グループ</b> に分けておきます。練習の設定画面でグループを選べば、そのメンバーを一度にチェックできます。両方のグループに入っていてもかまいませんし、グループに関係なく誰でもチェックできるので、別の曜日から来た人がいても問題ありません。</p>
+
+    <h3>予定</h3>
+    <p>グループには練習日を登録できます。時間と会場も入ります。直近の3件がメイン画面に表示され、タップするとそのグループを選んだ状態で練習が始まります。カレンダー連携もサーバーもありません。自分の端末に置いておく、自分のための予定表です。</p>
+
+    <h2>ウォームアップ</h2>
+    <p>練習は必ずウォームアップ画面から始まります。1セットの長さとセット数を決めると（初期値は2分30秒×4セット）、各セットの終わりに音が鳴るので、そこでエンドを交代します。最後のセットの終わりだけはアラームが鳴り、そこから第1ラウンドに入ります。<b>ウォームアップをスキップ</b> を押せばすぐに始められます。</p>
+
+    <h2>練習中</h2>
+    <p>各コートに誰がいるか、どちらのサイドかが表示されます。<b>開始</b> を押すと全コートの時計が同時に動き、時間になるとアラームが鳴ります。</p>
+
+    <h3>勝者を記録する</h3>
+    <p>勝った側をタップします。もう一度タップすると取り消せます。必須ではありません。勝者が選ばれていないコートは、単に集計されないだけです。誰かが足をひねって試合を中止したときは、それが正しい記録です。ただし押し忘れも同じ見た目になるので、未選択のまま次に進もうとすると一度確認します。</p>
+
+    <h3>遅れて来る人、先に帰る人</h3>
+    <p>右上の <b>参加者</b> から、遅れて来た人を追加したり、帰った人を外したりできます。遅れて来た人は「休憩の借り」を背負わず、みんなと同じ位置から入ります。外すのは次のラウンドからで、試合の途中でコートから引き上げられることはありません。それまでに出た試合の記録は残ります。</p>
+
+    <h3>組み合わせの決め方</h3>
+    <p>毎ラウンド新しく抽選し、休憩ができるだけ均等になるように重みを付けています。人が気にするのは「自分だけ休みが多い」ことで、一晩に同じ人と2回組むことではありません。ですから、休憩の偏りは組み合わせの重複より重く扱われます。</p>
+
+    <h2>アラーム</h2>
+    <p>アラームは着信音ではなく <b>メディアの音量</b> で鳴り、<b>サイレントモードでも聞こえます</b>。試合中は画面が消えないので、通知に頼ることもありません。</p>
+
+    <h3>聞こえないとき</h3>
+    <p><b>設定 → アラームをテスト</b> を開いてください。3秒後に鳴ります。これはわざとで、音量ボタンはそのとき鳴っている音の種類にしか効きません。鳴っている<i>最中</i>に手を伸ばせることが、設定が残る条件です。下の音量表示もボタンに合わせて動きます。</p>
+    <p>iPad をベンチに置いて使うなら、初回の練習の前に一度試しておくことをおすすめします。</p>
+
+    <h2>成績</h2>
+    <p><b>終了</b> を押すとその日の結果が出ます。何試合中何勝か、勝率は何％か、そして誰がいちばん勝ったか。<b>完了</b> を押すとシーズンに加算されます。</p>
+
+    <h3>シーズンの表</h3>
+    <p>メイン画面の <b>成績</b> にシーズン通算が出ます。スコア順と勝率順を切り替えられ、いつから数えているかは見出しに表示されます。<b>シーズンをリセット</b> で全員を0に戻せます。取り消せないので確認が入ります。</p>
+
+    <h3>スコアの意味</h3>
+    <p>勝数だけでは、たくさん参加した人が上に来るだけになりがちです。スコアはもう少し意味のあることを測ります。<b>1勝の価値は、倒した相手の強さ</b>、つまり相手の勝率の合計です。強い2人に勝てば、弱い2人に勝つより大きく、しかも勝った側は2人とも全額を受け取ります。半分ずつではありません。相手に対して払われるのであって、たまたま組んだパートナーに対してではないからです。</p>
+    <p>試合数の少ない記録はそのままでは使いません。勝率は試合数が多いほど強く反映され、20試合で完全に反映されます。初戦に勝っただけの人が勝率100%の選手として扱われることはありません。</p>
+    <p>全員の勝率はその日の開始時点で固定されます。そうしないと、同じ1勝が第1ラウンドと第6ラウンドで違う価値になってしまいます。</p>
+
+    <h2>iCloud</h2>
+    <p>メンバー、グループ、予定、シーズンの成績は <b>ご自身の iCloud</b> で同期されます。iPhone と iPad で二度入力する必要はありません。両方の端末が同じ Apple アカウントにサインインし、iCloud が有効である必要があります。</p>
+    <p>練習そのものは <b>保存されません</b>。その日のあいだだけ存在し、終了すると消えます。残るのは成績だけです。これは意図的で、毎ラウンドの記録が残ると、練習が練習でなくなってしまうからです。</p>
+
+    <h2>うまくいかないとき</h2>
+
+    <h3>もう一方の端末に同期されない</h3>
+    <p>両方が同じ Apple アカウントにサインインしていること、本体の設定で順番の iCloud が有効になっていることを確認してください。インストール直後の初回同期には少し時間がかかり、ネットワークも必要です。</p>
+
+    <h3>アラームが聞こえなかった</h3>
+    <p>上の <b>アラーム</b> をご覧のうえ、アプリの設定でテストしてください。テストでは大きく鳴るのに本番で聞こえない場合は、そのとき端末がどうなっていたか（画面が消えていた、かばんの中だった、音楽を再生していた など）をお知らせいただけると原因が絞れます。</p>
+
+    <h3>「練習を始める」が押せない</h3>
+    <p>登録されている人が2人未満です。ダブルスには4人必要です。</p>
+
+    <h3>不具合の報告</h3>
+    <p>いちばん助かるのは、<b>設定</b> の下に出ている <code>1.0 (1)</code> のようなバージョン、何をして何が起きたか、そして iPhone か iPad かです。</p>
+
+    <h2>関連ページ</h2>
+    <p><a href="https://blog.treasureboat.org/junban-privacy-ja.html">順番 プライバシーポリシー</a> &middot; <a href="https://blog.treasureboat.org/junban-help.html">English</a> &middot; <a href="https://treasureboat.org">treasureboat.org</a></p>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 TreasureBoat &middot; <a href="https://treasureboat.org">treasureboat.org</a></div>
+</footer>
+</body>
+</html>
