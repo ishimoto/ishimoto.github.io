@@ -23,7 +23,7 @@ On the Web App, the entrance to all this features are in the **EditMyself** sect
 
 ![Overview](/assets/S2M/Mobile/OverviewMobile.png)
 
-### How to setup on your Server
+### How to set up on your Server
 
 Both are prebuilt and can be used with `tabInject` to inject them into the **EditMySelfTBPerson** page.
 

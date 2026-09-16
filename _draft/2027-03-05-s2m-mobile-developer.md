@@ -18,7 +18,7 @@ And click on the Save Button at the end of the screen.
 
 > Development Memo: 
 > 
-> ![TB ID List](/assets/S2M/Mobile/Developer/DevUrlSetup.PNG)
+> ![TB ID List](/assets/S2M/Mobile/Developer/DevSetup.png)
 
 
 
@@ -35,13 +35,13 @@ FIXME REAL CONNECT TEST
 After successfully adding the ID, you can find now bellow the Save Button a new  
 **Remove TreasureBoat ID** Button
 
-![TB ID List](/assets/S2M/Mobile/Developer/TBID-List.PNG)
+![TB ID List](/assets/S2M/Mobile/Developer/TBIdList.png)
 
 # TreasureBoat ID Tools
 
 When clicking on the TreasureBoat ID Area, you will be able to see the following options:
 
-![Developer Menu](/assets/S2M/Mobile/Developer/DeveloperMenu.PNG)
+![Developer Menu](/assets/S2M/Mobile/Developer/DevMenu.png)
 
 * License – You can see your Developer License
 * Approve App – You can approve other App TreasureBoat Apps (macOS, AppleTV)
