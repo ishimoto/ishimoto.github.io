@@ -84,9 +84,9 @@ so edited config shows without a restart (turn off when done).
 The intro will be shown when the app is first installed or when the user chooses to show it again.  
 This are the default screens and will be configurable.
 
-![Intro 1](/assets/S2M/Mobile/NoConnection/Intro1.PNG)
-![Intro 2](/assets/S2M/Mobile/NoConnection/Intro2.PNG)
-![Intro 3](/assets/S2M/Mobile/NoConnection/Intro3.PNG)
+![Intro 1](/assets/S2M/Mobile/NoConnection/Intro01.png)
+![Intro 2](/assets/S2M/Mobile/NoConnection/Intro02.png)
+![Intro 3](/assets/S2M/Mobile/NoConnection/Intro03.png)
 
 # What's new
 
@@ -94,7 +94,7 @@ The What's new sheet shows the latest changes and updates to the app.
 It shown when the app has a new version or when the user chooses to show it again.  
 This will be configurable.
 
-![What's new](/assets/S2M/Mobile/NoConnection/WhatsNew.PNG)
+![What's new](/assets/S2M/Mobile/NoConnection/WhatIsNew.png)
 
 ## Technical Information
 
