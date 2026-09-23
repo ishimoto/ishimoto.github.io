@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TreasureBoat Mobile — Help</title>
+<meta name="description" content="Help for TreasureBoat Desktop, the TreasureBoat video channel app for macOS.">
+<style>
+  :root{--navy:#0a1830;--navy2:#0b1e3a;--ink:#0f172a;--slate:#475569;--mute:#64748b;--teal:#2dd4bf;--cyan:#22d3ee;--gold:#f5c451;--line:#e2e8f0;--bg:#f8fafc;
+    --font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased}
+  a{color:#0e93a6;font-weight:600;text-decoration:none}a:hover{text-decoration:underline}
+  .head{background:radial-gradient(1000px 500px at 80% -20%,rgba(34,211,238,.16),transparent 60%),linear-gradient(180deg,var(--navy),var(--navy2));color:#e5edf7}
+  .wrap{max-width:800px;margin:0 auto;padding:0 24px}
+  .head .wrap{padding:56px 24px 44px}
+  .eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}
+  .head h1{font-size:2.1rem;letter-spacing:-.02em;color:#fff;margin:.4rem 0}
+  .head p{color:#aebfd4}
+  main{padding:56px 0 80px}
+  h2{font-size:1.25rem;letter-spacing:-.01em;margin:2rem 0 .5rem;color:var(--ink)}
+  h3{font-size:1rem;margin:1.2rem 0 .2rem;color:var(--ink)}
+  p{color:var(--slate);margin:.6rem 0}
+  ul{margin:.5rem 0 .8rem 1.3rem;color:var(--slate)}li{margin:.3rem 0}
+  code{background:#eef2f7;border:1px solid var(--line);border-radius:6px;padding:.08rem .35rem;font-size:.9em}
+  .meta{color:var(--mute);font-size:.9rem}
+  .note{background:linear-gradient(135deg,rgba(45,212,191,.1),rgba(245,196,81,.1));border:1px solid var(--line);border-radius:14px;padding:16px 18px;color:var(--slate);font-size:.94rem;margin:22px 0}
+  footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mute);font-size:.88rem}
+</style>
+</head>
+<body>
+
+<div class="head">
+  <div class="wrap">
+    <div class="eyebrow">Help</div>
+    <h1>TreasureBoat Mobile</h1>
+    <p class="meta">Your TreasureBoat servers, on iPhone and iPad.</p>
+  </div>
+</div>
+
+<main>
+  <div class="wrap">
+
+    <div class="note">This covers what the app does today. It will grow as features land &mdash; if something here is missing or wrong, write to <a href="mailto:office@treasureboat.org">office@treasureboat.org</a>.</div>
+
+    <h2>What it is</h2>
+    <p>TreasureBoat Mobile reaches the TreasureBoat servers you work with: it browses their data, plays their video channels, holds your two-factor codes, and approves the other devices you sign in from. It needs iOS 26.5 or newer.</p>
+    <p>It is also the app the other TreasureBoat apps ask for. When TreasureBoat Desktop, TreasureBoat Vision or TreasureBoat TV show a pairing code, this is where you approve it.</p>
+
+    <h2>Connections</h2>
+    <p>A connection is one TreasureBoat server. Add as many as you work with; each keeps its own identity, and switching between them does not sign you out of the others.</p>
+    <p>If a connection stops working after a server has been moved or rebuilt, <b>Repair</b> re-establishes it without losing anything else you have configured.</p>
+
+    <h2>Approving another device</h2>
+    <p>When you sign in on a Mac, an Apple Vision Pro or an Apple TV, that device shows a code and waits.</p>
+    <ul>
+      <li><b>Approve App</b> &mdash; scan the QR the other device is showing. This is how TreasureBoat Desktop and TreasureBoat TV are paired.</li>
+      <li><b>Type the code</b> &mdash; used for Apple Vision Pro, where the code is displayed inside the headset and no camera can reach it.</li>
+    </ul>
+    <p>Approving stores a credential <b>on that device</b>, in its Keychain. Nothing is typed there again, and you can revoke it later from the TreasureBoat app.</p>
+
+    <h2>Two-factor codes</h2>
+    <p>TreasureBoat Mobile holds TOTP codes for the services you use, the same as any authenticator app. Add one by scanning its QR.</p>
+    <p><b>These seeds travel with you.</b> They are written to the iCloud Keychain, so a new iPhone has them without you enrolling everything again &mdash; which is the failure case that matters, since losing a seed can mean losing the account it protects.</p>
+    <p>Device pairings are the opposite: they stay on the device that was approved and never sync, because a pairing identifies <i>that</i> device and nothing else.</p>
+
+    <h2>Watching and reading</h2>
+    <p>The video channels your servers publish are here too, the same ones TreasureBoat Desktop and TreasureBoat TV show. The app also renders the documents a server sends: PDF, Markdown and web pages, without leaving the app.</p>
+
+    <h2>Server data</h2>
+    <p>Lists of records from a server can be browsed, filtered, opened and edited, as far as your account is allowed. What you can see and change is decided by the server, not by the app.</p>
+
+    <h2>If something is not working</h2>
+
+    <h3>Nothing loads from a server</h3>
+    <p>Check the connection. If a message mentions a method that does not exist, the app is talking to a server that has not been updated yet.</p>
+
+    <h3>A pairing will not complete</h3>
+    <p>The other device has to still be showing its code &mdash; codes expire. If approval succeeds but the other device says the credential could not be saved, the problem is on that device's Keychain, not here.</p>
+
+    <h3>A two-factor code is rejected</h3>
+    <p>TOTP depends on the clock. If the phone's time is set manually and has drifted, the codes will be wrong even though the seed is right.</p>
+
+    <h2>See also</h2>
+    <p><a href="https://blog.treasureboat.org/mtbdesktop-help.html">TreasureBoat Desktop Help</a> &middot; <a href="https://blog.treasureboat.org/mtbvision-help.html">TreasureBoat Vision Help</a> &middot; <a href="https://blog.treasureboat.org/mtbtv-help.html">TreasureBoat TV Help</a> &middot; <a href="https://blog.treasureboat.org/junban-help.html">Junban Help</a> &middot; <a href="https://blog.treasureboat.org/support.html">Support</a> &middot; <a href="https://blog.treasureboat.org/credits.html">Credits</a> &middot; <a href="https://blog.treasureboat.org/license.html">License &amp; Terms</a> &middot; <a href="https://blog.treasureboat.org/privacy-policy.html">Privacy Policy</a> &middot; <a href="https://treasureboat.org">treasureboat.org</a></p>
+
+  </div>
+</main>
+
+
+
+<footer>
+  <div class="wrap">© 2026 TreasureBoat · <a href="https://treasureboat.org">treasureboat.org</a></div>
+</footer>
+</body>
+</html>

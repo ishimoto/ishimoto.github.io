@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>TreasureBoat — Privacy Policy</title>
-<meta name="description" content="Privacy policy for the TreasureBoat framework, the TreasureBoat IntelliJ plugin, and the TBConnect app.">
+<meta name="description" content="Privacy policy for the TreasureBoat framework, the TreasureBoat IntelliJ plugin, and the TBConnect, TreasureBoat Desktop, TreasureBoat Vision, TreasureBoat Mobile and TreasureBoat TV apps.">
 <style>
   :root{--navy:#0a1830;--navy2:#0b1e3a;--ink:#0f172a;--slate:#475569;--mute:#64748b;--teal:#2dd4bf;--cyan:#22d3ee;--gold:#f5c451;--line:#e2e8f0;--bg:#f8fafc;
     --font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
@@ -32,16 +32,16 @@
   <div class="wrap">
     <div class="eyebrow">Legal</div>
     <h1>TreasureBoat — Privacy Policy</h1>
-    <p class="meta">Applies to the TreasureBoat framework, the TreasureBoat IntelliJ plugin, and the TBConnect app.</p>
+    <p class="meta">Applies to the TreasureBoat framework, the TreasureBoat IntelliJ plugin, and the TBConnect, TreasureBoat Desktop, TreasureBoat Vision, TreasureBoat Mobile and TreasureBoat TV apps.</p>
   </div>
 </div>
 
 <main>
   <div class="wrap">
-    <p class="meta">Last updated: 1 September 2026</p>
+    <p class="meta">Last updated: 23 September 2026</p>
 
     <h2>1. Who we are</h2>
-    <p>TreasureBoat (the “Vendor”) develops the TreasureBoat framework, the <b>TreasureBoat Coding Tools</b> plugin for IntelliJ-based IDEs, and the <b>TBConnect</b> application. This policy explains what these tools collect, why, and what we do not do with it. Questions go to <a href="mailto:office@treasureboat.org">office@treasureboat.org</a>.</p>
+    <p>TreasureBoat (the “Vendor”) develops the TreasureBoat framework, the <b>TreasureBoat Coding Tools</b> plugin for IntelliJ-based IDEs, and the <b>TBConnect</b>, <b>TreasureBoat Desktop</b>, <b>TreasureBoat Vision</b>, <b>TreasureBoat Mobile</b> and <b>TreasureBoat TV</b> applications. This policy explains what these tools collect, why, and what we do not do with it. Questions go to <a href="mailto:office@treasureboat.org">office@treasureboat.org</a>.</p>
 
     <div class="note">These are developer tools. They are used to reach your own TreasureBoat servers, and they are not advertising-supported. We do not sell data, we do not share it with advertisers or data brokers, and there is no third-party analytics or tracking in any of them.</div>
 
@@ -53,13 +53,14 @@
     <h2>3. What stays on your own device</h2>
     <p>Some things never leave the machine you are using:</p>
     <ul>
-      <li>Pairing credentials are stored in the system <b>Keychain</b> on your device. TBConnect keeps them in its own Keychain service, and removing the pairing deletes them.</li>
+      <li>Pairing credentials are stored in the system <b>Keychain</b> on your device. Each app keeps them in its own Keychain service — they are not shared between apps — and removing the pairing deletes them.</li>
       <li>Your license file is written to your own home directory by the IntelliJ plugin.</li>
       <li>TBConnect caches the list of project links it last received, so the list is available when you are offline. It is stored locally and removed when you unpair or change identity.</li>
     </ul>
 
     <h2>4. What the apps send, and to whom</h2>
     <p>TBConnect talks to one place: the TreasureBoat server at <a href="https://www.treasureboat.org">treasureboat.org</a>, over HTTPS. Each request is signed, and carries either your TreasureBoat ID or your device pairing so the server knows which links you are allowed to see. It sends nothing else, and it contacts no other service.</p>
+      <p><b>TreasureBoat Desktop</b>, <b>TreasureBoat Vision</b>, <b>TreasureBoat Mobile</b> and <b>TreasureBoat TV</b> talk to the TreasureBoat server you pair them with, which is normally your own. Channel listings, video and monitoring data come from that server, over HTTPS, and each request carries the pairing so the server knows which device is asking. If the server you pair with is not ours, nothing in those apps reaches us at all.</p>
     <p>The IntelliJ plugin contacts our server to retrieve and renew your license. The plugin itself is distributed through the <b>JetBrains Marketplace</b>, whose own privacy terms apply to the download.</p>
 
     <h2>5. How we use it</h2>
